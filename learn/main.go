@@ -65,7 +65,7 @@ func addPersonToDBHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "application/json")
-	resp := map[string]string{"status": "success", "message": "เพิ่มข้อมูลเรียบร้อยแล้ว"}
+	resp := map[string]string{"status": "success", "mess age": "เพิ่มข้อมูลเรียบร้อยแล้ว"}
 	json.NewEncoder(w).Encode(resp)
 }
 
